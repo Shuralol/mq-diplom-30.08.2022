@@ -795,6 +795,32 @@
       text-align: center;
     }
 
+    .trend {
+    width: 49%;
+    margin-top: 3px;
+   }
+   
+   .trend-link {
+    font-size: 17px;
+   }
+   
+   .news_name {
+    font-size: 17px;
+   }
+   .menu-2 {
+    width:50%;
+    margin-left: 0;
+   }
+   .container_second {
+    display: block;
+    width: 100%;
+  }
+
+  .section {
+    display: block;
+    width: 100%;
+  }
+
     .menu-burger_header:hover {
       background-color: rgba(255, 255, 255, 0.7);
     }
