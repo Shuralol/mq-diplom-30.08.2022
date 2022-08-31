@@ -781,6 +781,77 @@
     text-decoration: none;
     display: block;
   }
+
+  @media(max-width: 768px) {
+
+    .header {
+      background-image: url(../images/banner-bg-tablet.jpg);
+      width: 100%;
+    }
+    .welcome-title {
+      font-size: 40px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    .menu-burger_header:hover {
+      background-color: rgba(255, 255, 255, 0.7);
+    }
+    
+    .burger-menu_lines::before,
+    .burger-menu_lines::after,
+    .burger-menu_lines {
+      position: absolute;
+      width: 23px;
+      height: 3px;
+      background-color: #ffffff;
+    }
+    .burger-menu_lines {
+      top: 0;
+      right: 0;
+      margin-right: 35px;
+      margin-top: 50px;
+    }
+    .burger-menu_lines::before {
+      content: "";
+      top: -12px;
+    }
+    .burger-menu_lines::after {
+      content: "";
+      top: 12px;
+    }
+    
+    .nav {
+      padding-top: 120px;
+      position: fixed;
+      top: 0;
+      z-index: 20;
+      display: flex;
+      flex-flow: column;
+      height: 100%;
+    /*   background-color: #f9afe9; */
+      overflow-y: auto;
+      right: -100%;
+    }
+    
+    .nav-link {
+      padding: 18px 35px;
+      font-family: "Roboto", sans-serif;
+      font-size: 18px;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      font-weight: 400;
+      color: #bb1e99;
+      border-bottom: 1px solid #fff;
+      display: none;
+    }
+    .menu-link:first-child {
+      border-top: 1px solid #fff;
+    }
+  
+  }
   
   @media(max-width: 360px) {
   
