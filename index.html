@@ -12,37 +12,7 @@
 <body>
   <header class="header">
     <div class="header-wrap">
-  
-      <div class="menu-burger_header">
-        <span class="burger-menu_lines"></span>
-    <div class="menu">
-        <a class="logo-link" href="#0">
-            <img src="./svg/noemi-logo.svg" class="header-logo" alt="логотип ноэми" width="170"> </a>
-            <nav class="nav">
-              <ul class="nav-list">
-                  <li class="nav-item">
-                      <a class="nav-link" href="#0">главная</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#0">посты</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#0">статьи</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#0">теги</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#0">темы</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#0">контакты</a>
-                  </li>
-            </ul>
-        </nav>
-        </div>
-    </div>
- <!--      <div class="menu">
+      <div class="menu">
         <a class="logo-link" href="#0">
           <img src="svg/noemi-logo.svg" class="header-logo" alt="лого ноеми" width="170">
         </a>
@@ -68,46 +38,43 @@
             </li>
           </ul>
         </nav>
-      </div> -->
-    <!--   <div class="menu-burger_header">
-        <spun class="burger-menu_lines"></spun>
-    <div class="menu">
-        <a class="logo-link" href="#0">
-            <img src="./svg/noemi-logo.svg" class="header-logo" alt="логотип ноэми" width="170"> </a>
-        <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <a class="nav-link" href="#0">главная</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#0">посты</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#0">статьи</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#0">теги</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#0">темы</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#0">контакты</a>
-                </li>
+      </div>
+
+      <div class="menu-burger_header">
+        <span class="burger-menu_lines"></span>
+        <div class="menu">
+          <nav class="header-menu">
+            <ul class="menu-list">
+              <li class="menu-list-item">
+                <a class="menu-link" href="#0">главная</a>
+              </li>
+              <li class="menu-list-item">
+                <a class="menu-link" href="#0">посты</a>
+              </li>
+              <li class="menu-list-item">
+                <a class="menu-link" href="#0">статьи</a>
+              </li>
+              <li class="menu-list-item">
+                <a class="menu-link" href="#0">теги</a>
+              </li>
+              <li class="menu-list-item">
+                <a class="menu-link" href="#0">темы</a>
+              </li>
+              <li class="menu-list-item">
+                <a class="menu-link" href="#0">контакты</a>
+              </li>
             </ul>
-        </nav>
+          </nav>
         </div>
-    </div> -->
-    
- 
+      </div>
+
       <h1 class="welcome-title">Блог о творчестве, спорте, и образе жизни</h1>
     </div>
-
   </header>
 
   <!-- тренды  -->
 
-  <h3 class="news_name_h3 top"><span>Сейчас в тренде</span></h3>
+  <h3 class="news_name_h3 trend1"><span>Сейчас в тренде</span></h3>
   <section class="trends">
     <article class="trend grass">
       <div class="trend-text">
@@ -180,7 +147,7 @@
     <main class="main_page">
 
       <section class="section">
-        <img src="images/last-post1.jpg" class="img-1" alt="человек идет по воде"  height="294px">
+        <img src="images/last-post1.jpg" class="img-1" alt="человек идет по воде" height="294px">
         <div class="menu-2">
           <ul class="list-item">
             <li class="news_teg_item">
@@ -507,7 +474,7 @@
                 <span class="product__rub">₽</span>
               </div>
             </div>
-            
+
             <button class="button_store" alt="кнопка магазин">магазин</button>
           </div>
         </footer>
@@ -537,7 +504,7 @@
                 <span class="product__rub">₽</span>
               </div>
             </div>
-            
+
             <button class="button_store" alt="кнопка магазин">магазин</button>
           </div>
         </footer>
@@ -570,7 +537,7 @@
                 <span class="product__rub">₽</span>
               </div>
             </div>
-            
+
             <button class="button_store" alt="кнопка магазин">магазин</button>
           </div>
         </footer>
@@ -602,10 +569,52 @@
         </ul>
       </address>
       <a class="copyright" href="#0">
-        Copyright ©️ 2009–2019 City Blog LLC
+        Copyright © 2009–2019 City Blog LLC
       </a>
     </div>
   </footer>
+
+  <!-- popup -->
+
+  <div class="popup-bg hidden">
+    <div class="popup">     
+      <div class="popup_close"><img src="./svg/form-x.svg" /></div> 
+      <div class="popup_content">        
+        <h3 class="news_name_h3"><span>Ваш фидбек</span></h3>
+        <form class="search">
+          <div class="form_items">
+            <span>Как часто вы заходите на сайт?</span>
+            <label class="search-group">
+              <span class="hidden">Поле ввода</span>
+              <input class="search-field" placeholder="Почти каждый день" alt="поле поиска">
+              <span class="hidden">Кнопка поиска</span>
+              <button class="search-button" alt="кнопка поиска"></button>
+            </label>
+            
+          </div>
+          <div class="form_items">
+            <span>Вы подписаны на email рассылку?</span>
+            <div class="radio-buttons">
+              <div class="form_radio">
+                <input class="radio" id="radio-1" type="radio" name="selector" value="yes" checked>
+                <label for="radio-1">Да</label>
+              </div>
+              <div class="form_radio">
+                <input class="radio" id="radio-2" type="radio" name="selector" value="no">
+                <label for="radio-2">Нет</label>
+              </div>
+            </div>
+          </div>
+          <div class="form_items">
+            <span>Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+            <textarea class="search-field" placeholder="Может, больше рецептов?"></textarea>
+          </div>
+          <button class="search-button-2" alt="кнопка поиска">отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
 </body>
 
 </html>
