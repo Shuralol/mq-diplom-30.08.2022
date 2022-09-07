@@ -89,6 +89,7 @@
   text-transform: uppercase;
   margin: auto;
   padding: 128px 0;
+  font-weight: 700;
 }
 
 /* тренды */
@@ -206,8 +207,10 @@
   text-transform: uppercase;
   color: #ffffff;
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 24px;
   margin-bottom: 37px;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 /* блок2 */
@@ -280,9 +283,9 @@
   text-transform: uppercase;
 }
 
-.news_name:hover {
+/* .news_name:hover {
   color: #b59f5b;
-}
+} */
 
 .news_date {
   padding-top: 30px;
@@ -328,16 +331,27 @@
   text-align: center;
 }
 
-.news_name_h3 span {
-  display: inline-block;
+.aside-right .news_name_h3 {
+  font-size: 14px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #0f0d0e;
+  font-weight: 700;
+  font-family: "Open Sans";
 }
 
-.news_name_h3 span::after {
+.news_name_h3 span {
+  display: inline-block;
+  /* font-size: 14px;
+  line-height: 29px; */
+}
+
+ .news_name_h3 span::after {
   content: "";
   display: inline-block;
   width: 63%;
   border-bottom: solid 3px #e1d9bd;
-}
+} 
 
 .img-aside {
   width: 70px;
@@ -365,9 +379,9 @@
   text-transform: uppercase;
 }
 
-.news_name_aside:hover {
+/* .news_name_aside:hover {
   color: #b59f5b;
-}
+} */
 
 /*    ПОИСК  */
 
@@ -390,7 +404,7 @@
   width: 222px;
   height: 47px;
   font-size: 13px;
-  border: none;
+  border: solid 1px #f4f7f6;
   background-color: #f4f7f6;
 }
 
@@ -411,7 +425,8 @@
 /*   ///  */
 
 .news_name_h3 {
-  font-size: 14px;
+  font-size: 20px;
+  line-height: 29px;
   color: #0f0d0e;
   font-weight: 700;
   font-family: Open Sans, sans-serif;
@@ -444,7 +459,7 @@
   width: 222px;
   height: 47px;
   font-size: 13px;
-  border: none;
+  border: 1px solid #f4f7f6;
   background-color: #f4f7f6;
   width: 100%;
   margin-top: -20px;
@@ -452,7 +467,9 @@
 
 .search-field-2:focus {
   border: solid 1px #b59f5b;
-}
+  }
+  
+
 
 
 .search-button-2 {
@@ -556,11 +573,13 @@
 }
 
 .menu-list-tag_2:hover a {
-  color: #b59f5b;
+  /* color: #000000; */
+  text-shadow: #000000 0 0;
 }
 
 .menu-list-tag_2:hover span {
   text-shadow: none;
+  
 }
 
 .menu-link-tag_2 {
@@ -934,12 +953,14 @@
   }
 
   .welcome-title {
-    font-size: 40px;
+    font-size: 45px;
+    line-height: 75px;
     margin: 0;
     text-align: center;
     width: 100%;
     max-width: unset;
     padding: 100px 90px 130px 50px;
+    font-weight: 700;
   }
 
   .trend {
@@ -949,6 +970,7 @@
 
   .trend-link {
     font-size: 17px;
+    font-weight: 700;
   }
 
   .news_name {
@@ -1247,6 +1269,7 @@
     text-align: center;
     padding-top: 0;
     padding-bottom: 0;
+    font-weight: 700;
   }
 
   .popup {
