@@ -101,9 +101,10 @@
 
 .trends {
   width: 100%;
-  margin-top: 30px;
+ /*  margin-top: 30px; */
   display: flex;
   flex-wrap: wrap;
+  margin-top:-30px; /* проверка */
   }
 
 .trend:nth-child(n + 1):nth-child(-n + 3) {
@@ -394,9 +395,10 @@
 /*    ПОИСК  */
 
 .search {
-  margin: 60px 0;
+  /* margin: 60px 0; проверка  */
   display: flex;
   width: 100%;
+  margin-top: 0px; /* проверка */
 }
 
 .hidden {
@@ -458,10 +460,61 @@
   border-bottom: solid 3px #e1d9bd;
 }
 
+.news-name-h3-title-mailing {
+  font-size: 14px;
+  line-height: 29px;
+  color: #0f0d0e;
+  font-weight: 700;
+  font-family: Open Sans, sans-serif;
+  text-transform: uppercase;
+  margin: 0px 0 28px;
+  padding-bottom: 15px;
+  text-align: center;
+  margin-top: 40px; /* проверка */
+}
+
+.news-name-h3-title-mailing span {
+  display: inline-block;
+}
+
+.news-name-h3-title-mailing span::after {
+  content: "";
+  display: inline-block;
+  width: 63%;
+  border-bottom: solid 3px #e1d9bd;
+  margin-bottom: 15px; /* проверка */
+}
+
+.news-name-h3-title-product {
+  font-size: 20px;
+  line-height: 29px;
+  color: #0f0d0e;
+  font-weight: 700;
+  font-family: Open Sans, sans-serif;
+  text-transform: uppercase;
+  margin: 0px 0 28px;
+  padding-bottom: 15px;
+  text-align: center;
+  margin-top: 65px; /* проверка */
+}
+
+.news-name-h3-title-product span {
+  display: inline-block;
+}
+
+.news-name-h3-title-product span::after {
+  content: "";
+  display: inline-block;
+  width: 63%;
+  border-bottom: solid 3px #e1d9bd;
+  margin-bottom: 15px; /* проверка */
+}
+
 .search-aside {
   display: flex;
   width: 90%;
   flex-direction: column;
+  margin-top: -40px; /* проверка */
 }
 
 .search-field-aside {
@@ -507,6 +560,7 @@
   margin: 0px 0 28px;
   padding-bottom: 15px;
   text-align: center;
+  margin-top: -35px; /* проверка */
 }
 
 .news-name-h3-aside-title span {
@@ -561,7 +615,7 @@
   margin: 0px 0 28px;
   padding-bottom: 15px;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 25px; /* проверка */
 }
 
 .news-name-h3-caption-aside span {
@@ -630,6 +684,7 @@
   padding-left: 15px;
   padding-right: 15px;
   max-width: 1200px;
+  margin-top: -65px; /* проверка */
 }
 
 .product {
@@ -638,6 +693,7 @@
   background-color: #ffffff;
   margin-bottom: 20px;
   flex-direction: column;
+  margin-right: 110px; /* проверка */
 }
 
 .product-body {
