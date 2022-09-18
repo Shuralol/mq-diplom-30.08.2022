@@ -8,9 +8,15 @@
 
 @font-face {
   font-family: Open Sans;
-  src: url(../fonts/OpenSans-Regular.woff),
-    url(../fonts/OpenSans-Bold.woff);
+  src: url(../fonts/OpenSans-Regular.woff);
   font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Open Sans;
+  src: url(../fonts/OpenSans-Bold.woff);
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -47,7 +53,7 @@
   color: #d2d5d4;
   font-size: 13px;
   text-transform: uppercase;
-  margin: 15px;
+  margin-right: 36px;
 }
 
 .menu,
@@ -55,6 +61,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.header-wrap .menu .logo-link {
+  margin: 0;
 }
 
 .header-logo {
@@ -71,7 +81,7 @@
   list-style: none;
   display: flex;
   align-items: center;
-  margin-top: 44px;
+  margin-top: 30px;
 }
 
 .nav-link:hover {
@@ -90,25 +100,55 @@
   text-align: center;
   text-transform: uppercase;
   margin: auto;
-  padding: 128px 0;
+  padding: 105px 0 130px 0;
   font-weight: 700;
 }
 
 /* тренды */
-.news-name-h3-title.trend-title {
+/* .news-name-h3-title.trend-title {
   margin-top: 60px;
+  margin-bottom: 0;
+  width: 100%;
+} */
+
+.trend-title {
+  margin-top: 43px;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: Open Sans, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 15px;
+  margin-bottom: 15px;
+  width: 100%;
 }
+
+.trend-title span {
+  display: inline-block;
+}
+
+.trend-title span::after {
+  content: "";
+  display: inline-block;
+  width: 43%;
+  border-bottom: solid 3px #e1d9bd;
+  margin-bottom: 6px; /* проверка */
+}
+
 
 .trends {
   width: 100%;
- /*  margin-top: 30px; */
   display: flex;
   flex-wrap: wrap;
-  margin-top:-30px; /* проверка */
+ /* margin-top:-30px;  проверка */
   }
 
-.trend:nth-child(n + 1):nth-child(-n + 3) {
+.trend {
   margin-right: 3px;
+}
+
+.trend:last-child {
+  margin-right: 0;
 }
 
 .trend::after {
@@ -438,8 +478,7 @@
 /*   ///  */
 
 .news-name-h3-title {
-  font-size: 20px;
-  line-height: 29px;
+  font-size: 20px;  
   color: #0f0d0e;
   font-weight: 700;
   font-family: Open Sans, sans-serif;
@@ -486,8 +525,8 @@
 }
 
 .news-name-h3-title-product {
+  width: 100%;
   font-size: 20px;
-  line-height: 29px;
   color: #0f0d0e;
   font-weight: 700;
   font-family: Open Sans, sans-serif;
@@ -677,6 +716,7 @@
 
 .products {
   display: flex;
+  flex-wrap: wrap;
   box-sizing: border-box;
   justify-content: space-between;
   margin: 0 auto;
@@ -693,7 +733,7 @@
   background-color: #ffffff;
   margin-bottom: 20px;
   flex-direction: column;
-  margin-right: 110px; /* проверка */
+  /* margin-right: 110px;   */
 }
 
 .product-body {
@@ -885,7 +925,7 @@
 .popup {
   background-color: #fff;
   position: absolute;
-  width: 400px;
+  width: 390px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -898,13 +938,36 @@
 
 .popup .popup-close {
   position: absolute;
-  top: -35px;
+  top: -27px;
   right: 0;
 }
 
 .popup .popup-close img {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
+}
+
+.popup-title {
+  letter-spacing: 0.2px;
+  font-size: 18px;
+  font-weight: 800;
+  font-family: Open Sans, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 15px;
+  margin-bottom: 18px;
+}
+
+.popup-title span {
+  display: inline-block;
+}
+
+.popup-title span::after {
+  content: "";
+  display: inline-block;
+  width: 63%;
+  border-bottom: solid 3px #e1d9bd;
+  margin-bottom: 6px; /* проверка */
 }
 
 .popup .popup-content .search {
@@ -921,7 +984,7 @@
 }
 
 .popup-content .form-items {
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   width: 100%;
   position: relative;
 }
@@ -933,7 +996,7 @@
   font-family: "Open Sans", sans-serif;
   display: block;
   width: 100%;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 
 .popup-content .form-items .search-group {
@@ -952,10 +1015,14 @@
 
 .popup-content .form-items textarea.search-field {
   height: 130px;
+  padding-top: 15px;
+  font-size: 15px;
+  resize: none;
 }
 
 .popup-content .search-button-aside {
-  margin: 0;
+  margin-bottom: 20px;
+  margin-top: 0;
   width: 100%;
 }
 
@@ -964,7 +1031,7 @@
 }
 
 .radio-buttons .form-radio {
-  padding-right: 35px;
+  padding-right: 15px;
   display: flex;
   align-items: center;
 }
@@ -985,7 +1052,7 @@
   font-family: "Open Sans";
   cursor: pointer;
 	position: relative;
-	padding-left: 30px;
+	padding-left: 25px;
   user-select: none;
 }
 
@@ -1189,6 +1256,10 @@
     padding-bottom: 220px;
   }
 
+  .header .header-wrap .header-logo {
+    width: 100%;
+  }
+
   .nav {
     display: none;
   }
@@ -1340,7 +1411,7 @@
     font-weight: 700;
     font-family: Open Sans, sans-serif;
     text-align: center;
-    padding-top: 0;
+    padding-top: 30px;
     padding-bottom: 0;
     font-weight: 700;
   }
